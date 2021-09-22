@@ -1,0 +1,17 @@
+<form (ngSubmit)="insertuser()">
+<div class="information">
+  <div class="from-information">
+    <label for="name">ชื่อร้าน</label>
+    <input type="text" id="name" name="name"[(ngModel)]="insert.name">
+  </div>
+  <div class="from-information">
+    <label for="detall">ข้อมูลร้าน</label>
+    <input  type="text" id="detall" name="detall"[(ngModel)]="insert.detall" >
+  </div>
+  <div class="from-information">
+    <label for="address">ที่อยู่</label>
+    <input type="text" id="address" name="address"[(ngModel)]="insert.address">
+  </div>
+  <button type="submit" >เพิ่มข้อมูล</button>
+</div>
+</form>
